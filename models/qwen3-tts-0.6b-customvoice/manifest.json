@@ -1,0 +1,17 @@
+{
+  "chunkSize": 99614720,
+  "files": {
+    "onnx/embed_tokens_fp16.onnx_data": {
+      "totalSize": 641210368,
+      "numChunks": 7
+    },
+    "onnx/speech_decoder_fp32.onnx_data": {
+      "totalSize": 456219776,
+      "numChunks": 5
+    },
+    "onnx/talker_decoder_with_past_q4.onnx_data": {
+      "totalSize": 554930176,
+      "numChunks": 6
+    }
+  }
+}
