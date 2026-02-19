@@ -1,0 +1,133 @@
+pytorch2.10.0:Ò
+b
+text_embedding.weight
+text_ids/text_embedding/Gather_output_0/text_embedding/Gather"Gather
+ã
+/text_embedding/Gather_output_0
+onnx::MatMul_18+/text_projection/linear_fc1/MatMul_output_0"/text_projection/linear_fc1/MatMul"MatMul
+û
+text_projection.linear_fc1.bias
++/text_projection/linear_fc1/MatMul_output_0(/text_projection/linear_fc1/Add_output_0/text_projection/linear_fc1/Add"Add
+~
+(/text_projection/linear_fc1/Add_output_0(/text_projection/act_fn/Sigmoid_output_0/text_projection/act_fn/Sigmoid"Sigmoid
+ú
+(/text_projection/linear_fc1/Add_output_0
+(/text_projection/act_fn/Sigmoid_output_0$/text_projection/act_fn/Mul_output_0/text_projection/act_fn/Mul"Mul
+ê
+$/text_projection/act_fn/Mul_output_0
+onnx::MatMul_19+/text_projection/linear_fc2/MatMul_output_0"/text_projection/linear_fc2/MatMul"MatMul
+â
+text_projection.linear_fc2.bias
++/text_projection/linear_fc2/MatMul_output_0graph_output_cast_0/text_projection/linear_fc2/Add"Add
+Y
+codec_embedding.weight
+	codec_idsgraph_output_cast_1/codec_embedding/Gather"Gather
+G
+graph_output_cast_0text_embedsgraph_output_cast0"Cast*	
+to†
+H
+graph_output_cast_1codec_embedsgraph_output_cast1"Cast*	
+to†
+main_graph*mÄ£	Ä
+Btext_embedding.weightj'
+locationembed_tokens_fp16.onnx_dataj
+offset0j
+length	622329856p*vÄ
+Btext_projection.linear_fc1.biasj'
+locationembed_tokens_fp16.onnx_dataj
+offset	622329856j
+length4096p*vÄ
+Btext_projection.linear_fc2.biasj'
+locationembed_tokens_fp16.onnx_dataj
+offset	622333952j
+length4096p*tÄÄ
+Bcodec_embedding.weightj'
+locationembed_tokens_fp16.onnx_dataj
+offset	622338048j
+length12582912p*lÄÄ
+Bonnx::MatMul_18j'
+locationembed_tokens_fp16.onnx_dataj
+offset	634920960j
+length8388608p*lÄÄ
+Bonnx::MatMul_19j'
+locationembed_tokens_fp16.onnx_dataj
+offset	643309568j
+length8388608pZ'
+text_ids
+
+batch
+
+sequenceZ(
+	codec_ids
+
+batch
+
+sequenceb/
+text_embeds 
+
+batch
+
+sequence
+Äb0
+codec_embeds 
+
+batch
+
+sequence
+ÄjC
+/text_embedding/Gather_output_0 
+
+
+batch
+
+sequence
+ÄjO
++/text_projection/linear_fc1/MatMul_output_0 
+
+
+batch
+
+sequence
+ÄjL
+(/text_projection/linear_fc1/Add_output_0 
+
+
+batch
+
+sequence
+ÄjL
+(/text_projection/act_fn/Sigmoid_output_0 
+
+
+batch
+
+sequence
+ÄjH
+$/text_projection/act_fn/Mul_output_0 
+
+
+batch
+
+sequence
+ÄjO
++/text_projection/linear_fc2/MatMul_output_0 
+
+
+batch
+
+sequence
+Äj7
+graph_output_cast_0 
+
+
+batch
+
+sequence
+Äj7
+graph_output_cast_1 
+
+
+batch
+
+sequence
+ÄB
